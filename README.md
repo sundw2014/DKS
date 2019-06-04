@@ -76,6 +76,6 @@ python main.py --save ./logs/wrn-28-10_dropout --depth 28 --width 10 --dropout -
 
  ```
  cd imagenet/
- python main.py -a [resnet18/50/152] --mode_path [path to the pretrained model] [ImageNet folder with the val subfolder]
+ python main.py -a [resnet18/50/152] --model_path [path to the pretrained model] [ImageNet folder with the val subfolder]
  ```
 
