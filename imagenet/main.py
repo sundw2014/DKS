@@ -93,17 +93,15 @@ def validate(val_loader, model, criterion):
     end = time.time()
     for step, (input, target) in enumerate(val_loader):
         target = target.cuda(async=True)
-        input_var = torch.autograd.Variable(input, volatile=True)
-        target_var = torch.autograd.Variable(target, volatile=True)
 
         # compute output
-        output = model(input_var)
-        _loss = criterion(output, target_var)
-        loss.update(_loss.data[0], input.size(0))
+        output = model(input)
+        _loss = criterion(output, target)
+        loss.update(_loss.item(), input.size(0))
 
-        prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
-        top1.update(prec1[0], input.size(0))
-        top5.update(prec5[0], input.size(0))
+        prec1, prec5 = accuracy(output, target, topk=(1, 5))
+        top1.update(prec1.item(), input.size(0))
+        top5.update(prec5.item(), input.size(0))
 
         # measure elapsed time
         batch_time.update(time.time() - end)
