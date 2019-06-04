@@ -24,7 +24,7 @@ See https://arxiv.org/abs/1906.00675 for details.
 
 <img width="787" alt="CIFAR_error_rate" src="images/CIFAR_error_rate.png">
 
-*Figure 1: Error rate of WRNs on CIFAR-100. (left: WRN-28-10, right: WRN-28-10-dropout. We plot the range of 5 run.)*
+*Figure 1: Error rate of WRNs on CIFAR-100. (left: WRN-28-10, right: WRN-28-10-dropout. We plot the range of 5 runs.)*
 
 <br>
 
