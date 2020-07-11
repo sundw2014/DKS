@@ -3,6 +3,12 @@ Deeply-Supervised Knowledge Synergy
 
 This code was used for experiments with Deeply-Supervised Knowledge Synergy (CVPR'2019) https://arxiv.org/abs/1906.00675 by Dawei Sun, Anbang Yao, Aojun Zhou, and Hao Zhao. This code is based on the official pytorch implementation of WRN (https://github.com/szagoruyko/wide-residual-networks/tree/master/pytorch).
 
+<img width="787" alt="illustration" src="images/illustration.png">
+
+*Figure 1: Overall architecture of the proposed training framwork.
+
+<br>
+
 Modern Convolutional Neural Networks (CNNs) have more complicated blocks stacked with greatly increased depth compared with the pioneering 8-layer AlexNet. However, current prevailing training scheme follows the previous way of adding supervision to the last layer of the network only and propagating error information up layer-by-layer. In this paper, we propose Deeply-supervised Knowledge Synergy (DKS), a new method aiming to train CNNs with improved generalization ability for image classification tasks without introducing extra computational cost during inference. Inspired by the deeply-supervised learning scheme, we first append auxiliary supervision branches on top of certain intermediate layers during network training. While using auxiliary supervision can improve model accuracy to some degree, we go one step further to explore the possibility of utilizing the knowledge (i.e., the class probability over the training data) generated from the auxiliary classifiers and the classifier connected to the last layer as a new regularization to improve CNN training. A novel synergy loss, which considers pairwise knowledge matching among all supervision branches, is presented. Intriguingly, dense pairwise knowledge matching operations are conducted in both top-down and bottom-up directions at each training iteration, resembling a dynamic synergy process for the same task. We evaluate the proposed method on image classification datasets using state-of-the-art CNN architectures. Extensive experiments show that the models trained with our DKS are consistently better than their corresponding counterparts.
 
 Test error (%, mean +/- std over 5 runs) on CIFAR-100:
@@ -21,8 +27,6 @@ ResNet-50 | 25.47/7.58  | 23.53/6.40
 ResNet-152| 22.45/5.94  | 20.98/5.28
 
 See https://arxiv.org/abs/1906.00675 for details.
-
-<img width="787" alt="CIFAR_error_rate" src="images/illustration.png">
 
 <img width="787" alt="CIFAR_error_rate" src="images/CIFAR_error_rate.png">
 
