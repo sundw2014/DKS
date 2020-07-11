@@ -22,15 +22,17 @@ ResNet-152| 22.45/5.94  | 20.98/5.28
 
 See https://arxiv.org/abs/1906.00675 for details.
 
+<img width="787" alt="CIFAR_error_rate" src="images/illustration.png">
+
 <img width="787" alt="CIFAR_error_rate" src="images/CIFAR_error_rate.png">
 
-*Figure 1: Error rate of WRNs on CIFAR-100. (left: WRN-28-10, right: WRN-28-10-dropout. We plot the range over 5 runs.)*
+*Figure 2: Error rate of WRNs on CIFAR-100. (left: WRN-28-10, right: WRN-28-10-dropout. We plot the range over 5 runs.)*
 
 <br>
 
 <img width="787" alt="ImageNet_error_rate" src="images/ImageNet_error_rate.png">
 
-*Figure 2: Error rate of ResNets on ImageNet. (a): ResNet-18, (b): ResNet-50, (c): ResNet-152. (For ResNet-152, we use stronger data augmentation.)*
+*Figure 3: Error rate of ResNets on ImageNet. (a): ResNet-18, (b): ResNet-50, (c): ResNet-152. (For ResNet-152, we use stronger data augmentation.)*
 <br>
 
 bibtex:
