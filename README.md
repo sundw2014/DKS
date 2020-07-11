@@ -5,7 +5,7 @@ This code was used for experiments with Deeply-Supervised Knowledge Synergy (CVP
 
 <img width="787" alt="illustration" src="images/illustration.png">
 
-*Figure 1: Overall architecture of the proposed training framwork.
+*Figure 1: Overall architecture of the proposed training framwork.*
 
 <br>
 
